@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'learningAngular';
+  title = 'Learning Angular';
+  author = 'Mariano L. Pasini';
+  object = {
+    learning: 'Angular',
+    from: 'Pildoras Informaticas',
+    love: 'Frontend'
+  };
+  array = [
+    'React',
+    'Redux',
+    'CSS',
+    'HTML',
+    'Now Angular'
+  ]
 }
