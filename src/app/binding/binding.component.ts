@@ -6,13 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./binding.component.css']
 })
 export class BindingComponent {
-  aprendiendo= true;
+  alert = 'Pasa por arriba'
+  actualState = 'Learning'
+  checked = true
 
-  setCoffe() {
-    this.aprendiendo= false
+  setActualState(event:Event) {
+    this.actualState= (<HTMLInputElement>event.target).value
+    if(this.actualState === 'Break') {
+      this.checked= false
+    }
   }
 
-  setContinue() {
-    this.aprendiendo = true
+  showAlert() {
+    this.alert = 'Pasaste y cambie la propiedad'
   }
+
+  twoWayBinding= 'Initial'
 }

@@ -1,10 +1,26 @@
+// [] ts to html
+// () html to ts
+// [(ngModel)] two way binding
 <div>
     <h4> APRENDIENDO BINDING </h4>
-    Aprendiendo: <input type='checkbox' [checked]='aprendiendo'>
-    <button (click)='setCoffe()'> 
-        Coffe
-    </button>
-    <button (click)='setContinue()'> 
-        Continuar
-    </button>
+    <div>
+        Actual State : {{ actualState }}
+    </div>  
+    <div>
+        ON: <input type='radio' value='Learning' name='actualState' [checked]='checked' (click)='setActualState($event)'>
+        OFF: <input type='radio' value='Break' name='actualState' (click)='setActualState($event)'>
+    </div>
+    <hr />
+    <div (mouseover)='showAlert()'>
+        <div>
+            {{ alert }}
+        </div>
+        Mostrar alerta: Hover event
+    </div>
+    <hr />
+    <h4> TWO WAY BINDING </h4>
+    <div> Binding: {{ twoWayBinding }} </div>
+    <div> 
+        <input type='text' [(ngModel)]= 'twoWayBinding'>
+    </div>
 </div>
