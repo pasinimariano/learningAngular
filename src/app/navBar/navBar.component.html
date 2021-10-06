@@ -1,4 +1,6 @@
-<div> 
-    {{links}} 
+<div>
+    <div *ngFor='let link of links'> 
+        {{link}} 
+    </div>
     <app-search-bar></app-search-bar>
 </div>
