@@ -7,6 +7,7 @@ import { NavBarComponent } from './navBar/navBar.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { AlumnoComponent } from './alumnos/alumno/alumno.component';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AlumnoComponent } from './alumnos/alumno/alumno.component';
     NavBarComponent,
     SearchBarComponent,
     AlumnosComponent,
-    AlumnoComponent
+    AlumnoComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,
