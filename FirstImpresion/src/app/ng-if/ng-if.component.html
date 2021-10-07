@@ -1,9 +1,12 @@
 <h4> NG-IF </h4>
 <div class='container d-flex justify-content-center'>
-    <div *ngIf='show' class='text-success'>
+    <div *ngIf='show; else notShow' class='text-success'>
         {{showing}}
     </div>
     <button (click)='handleShow()' class='btn btn-dark'>
         SHOW
     </button>
 </div>
+<ng-template #notShow>
+    <p class='text-primary'> Me muestro porque entro en el else </p>
+</ng-template>
