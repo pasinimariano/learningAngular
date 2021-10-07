@@ -1,18 +1,24 @@
-<h2  class='text-center'> {{ title }} </h2>
-<app-recruit [arr] = 'employees'></app-recruit>
+<h2 class='text-center'> {{ title }} </h2>
+<app-recruit [arr]='employees'></app-recruit>
 <div class='container'>
   <div class='row'>
     <div class='col' class='d-flex flex-wrap'>
       <div *ngFor='let employee of employees; let i = index' class='m-5'>
         <h5>{{i+1}}</h5>
         <div>
-          Nombre: {{employee.name}} {{employee.lastname}} 
+          Nombre: {{employee.name}} {{employee.lastname}}
         </div>
         <div>
-          Posicion: {{employee.position}} 
+          Posicion:
+          <span [ngStyle]='{color: employee.position === "Presidente" ? "red" : "blue"}'>
+            {{employee.position}}
+          </span>
         </div>
         <div>
-          Salario: $ {{employee.salary}}
+          Salario: $
+          <span [ngClass]='{uponMax: employee.salary > 160000}'>
+            {{employee.salary}}
+          </span>
         </div>
         <br />
       </div>
