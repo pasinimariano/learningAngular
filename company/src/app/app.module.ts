@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RecruitComponent } from './recruit/recruit.component';
+import { HolidaysComponent } from './holidays/holidays.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RecruitComponent
+    RecruitComponent,
+    HolidaysComponent
   ],
   imports: [
     BrowserModule,

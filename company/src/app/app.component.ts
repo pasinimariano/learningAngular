@@ -15,4 +15,10 @@ export class AppComponent {
     new Employee('Agustina', 'Corio', 'Frontend', 150000),
     new Employee('Celeste', 'Ituarte', 'Backend', 150000),
   ]
+
+  dates = []
+
+  addNewDate(newDate: string) {
+    this.dates.push(newDate)
+  }
 } 

@@ -21,6 +21,10 @@
           </span>
         </div>
         <br />
+        <app-holidays (newDate)='addNewDate($event)'></app-holidays>
+        <ul style='list-style: none;'>
+          <li *ngFor="let date of dates">{{date}}</li>
+        </ul>
       </div>
     </div>
   </div>
