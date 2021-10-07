@@ -1,0 +1,21 @@
+<h2  class='text-center'> {{ title }} </h2>
+<app-recruit [arr] = 'employees'></app-recruit>
+<div class='container'>
+  <div class='row'>
+    <div class='col' class='d-flex flex-wrap'>
+      <div *ngFor='let employee of employees; let i = index' class='m-5'>
+        <h5>{{i+1}}</h5>
+        <div>
+          Nombre: {{employee.name}} {{employee.lastname}} 
+        </div>
+        <div>
+          Posicion: {{employee.position}} 
+        </div>
+        <div>
+          Salario: $ {{employee.salary}}
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<h5 class='text-center'> Ingreso de nuevo personal </h5>
+<div class='container d-flex align-items-center flex-column'>
+    <input type='text' placeholder='Nombre' [(ngModel)]='name'>
+    <input type='text' placeholder='Apellido' [(ngModel)]='lastname'>
+    <input type='text' placeholder='Posicion' [(ngModel)]='position'>
+    <input type='number' placeholder='Salario' [(ngModel)]='salary'>
+    <button class='btn btn-dark' (click)='createEmployee()'> Ingresar </button>
+</div>
