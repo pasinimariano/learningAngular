@@ -1,0 +1,9 @@
+<h4> NG-IF </h4>
+<div class='container d-flex justify-content-center'>
+    <div *ngIf='show' class='text-success'>
+        {{showing}}
+    </div>
+    <button (click)='handleShow()' class='btn btn-dark'>
+        SHOW
+    </button>
+</div>

@@ -9,6 +9,7 @@ import { AlumnosComponent } from './alumnos/alumnos.component';
 import { AlumnoComponent } from './alumnos/alumno/alumno.component';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     SearchBarComponent,
     AlumnosComponent,
     AlumnoComponent,
-    BindingComponent
+    BindingComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
